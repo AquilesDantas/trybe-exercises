@@ -13,10 +13,10 @@ let data = document.getElementById("#data");
 let dataFormat = data.split("/",3);
 function verificaData() {
     if(dataFormat.split[0] < 0 || dataFormat.split[0] >= 31) {
-        return false;
+        alert("Dia do mês invalido!")
     } else if (dataFormat.split[1] < 0 || dataFormat.split[1] >= 12) {
-        return false;
+        alert("Mês invalido!")
     } else if (dataFormat.split[2] < 0) {
-        return false;
+        alert("Ano invalido!")
     }
 }
