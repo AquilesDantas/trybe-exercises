@@ -9,9 +9,10 @@ window.onload = function estados() {
         
     }
 }
-let data = document.getElementById("#data");
-let dataFormat = data.split("/",3);
+
 function verificaData() {
+    let data = document.getElementById("#data");
+    let dataFormat = data.split("/",3);
     if(dataFormat.split[0] < 0 || dataFormat.split[0] >= 31) {
         return false;
     } else if (dataFormat.split[1] < 0 || dataFormat.split[1] >= 12) {
