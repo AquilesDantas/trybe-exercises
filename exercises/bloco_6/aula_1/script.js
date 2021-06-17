@@ -9,6 +9,7 @@ window.onload = function estados() {
         
     }
 }
+<<<<<<< HEAD
 
 function verificaData() {
     let data = document.getElementById("#data");
@@ -19,5 +20,24 @@ function verificaData() {
         return false;
     } else if (dataFormat.split[2] < 0) {
         return false;
+=======
+function verificaData() {
+    preventDefault();
+    let data = document.getElementById("data");
+    console.log(data);
+    let dataFormat = data.split("/");
+    if(dataFormat[0] < 0 || dataFormat[0] >= 31) {
+        alert("Dia do mês invalido!")
+    } else if (dataFormat[1] < 0 || dataFormat[1] >= 12) {
+        alert("Mês invalido!")
+    } else if (dataFormat[2] < 0) {
+        alert("Ano invalido!")
+    } else {
+
+>>>>>>> d7caaa11210a476ec26a0e1d30356b2a48094f6d
     }
 }
+let envio = document.getElementById("enviar");
+envio.addEventListener("click", verificaData);
+
+
