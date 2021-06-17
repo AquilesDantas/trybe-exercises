@@ -9,14 +9,22 @@ window.onload = function estados() {
         
     }
 }
-let data = document.getElementById("#data");
-let dataFormat = data.split("/",3);
 function verificaData() {
-    if(dataFormat.split[0] < 0 || dataFormat.split[0] >= 31) {
+    preventDefault();
+    let data = document.getElementById("data");
+    console.log(data);
+    let dataFormat = data.split("/");
+    if(dataFormat[0] < 0 || dataFormat[0] >= 31) {
         alert("Dia do mês invalido!")
-    } else if (dataFormat.split[1] < 0 || dataFormat.split[1] >= 12) {
+    } else if (dataFormat[1] < 0 || dataFormat[1] >= 12) {
         alert("Mês invalido!")
-    } else if (dataFormat.split[2] < 0) {
+    } else if (dataFormat[2] < 0) {
         alert("Ano invalido!")
+    } else {
+
     }
 }
+let envio = document.getElementById("enviar");
+envio.addEventListener("click", verificaData);
+
+

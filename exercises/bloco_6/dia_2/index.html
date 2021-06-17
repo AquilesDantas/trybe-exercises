@@ -1,15 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap</title>
-    <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.min.css">
-    <script src="jquery-3.6.0.min.js"></script>
-    <script src="bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
-</head>
-<body>
-    <h1>Hello Word!</h1>
-</body>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.min.css">
+        <script src="jquery-3.6.0.min.js"></script>
+        <script src="bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
+        <title>Curriculo</title>
+    </head>
+    <body>
+        <h1>Formulario Currículo</h1>
+        <form action="">
+            <fieldset>
+                <div>
+                    <label for="">Nome:</label>
+                    <input type="text" maxlength="40" required>
+                    <label for="">E-mail:</label>
+                    <input type="text" maxlength="50" required>
+                </div>
+                <div>
+                    <label for="">CPF:</label>
+                    <input type="text" maxlength="11" required>
+                    <label for="">Endereço:</label>
+                    <input type="text" maxlength="200" required>
+                </div>
+                <div>
+                    <label for="">Cidade:</label>
+                    <input type="text" maxlength="28" required>
+                    <label for="estado">Estado:</label>
+                    <select name="est" id="estado" required></select>
+                </div>
+                <div>
+                    <label for="">Tipo:</label>
+                    <label for="m1"><input type="radio" name="mora" id="m1">Casa</label>
+                    <label for="m2"><input type="radio" name="mora" id="m2">Apartamento</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                    <div>
+                        <label for="res">Resumo do curriculo:</label>
+                        <textarea name="" id="res" cols="30" rows="10" maxlength="1000"></textarea>
+                        <label for="">Cargo:</label>
+                        <input type="text" maxlength="40">
+                    </div>
+                    <div>
+                        <label for="">Descrição do cargo:</label>
+                        <input type="text" maxlength="500">
+                        <label for="data">Data:</label>
+                        <input type="text" name="dt" id = "">
+                    </div>
+                    <div>
+                    <button>Enviar</button>
+                    <button>Limpar</button>
+                    </div>
+            </fieldset>
+        </form> 
+    </body>
 </html>
