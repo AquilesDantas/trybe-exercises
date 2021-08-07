@@ -31,4 +31,4 @@ if()
 function paintPixel() {
     
 
-} quadroPixels.addEventListener("click", paintPixel);*/
+} quadroPixels.addEventListener("click", paintPixel); test*/
