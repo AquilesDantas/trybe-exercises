@@ -8,7 +8,7 @@ export class Pokedex extends Component {
 
     return (
     list.map((poke) => (
-      <div>
+      <div className="pokedex">
         <Pokemon pk={poke}/>
       </div>
     ))

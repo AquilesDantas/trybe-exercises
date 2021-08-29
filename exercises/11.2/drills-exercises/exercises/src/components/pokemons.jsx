@@ -7,11 +7,11 @@ export class Pokemon extends Component {
     const { pk } = this.props;
 
     return (
-      <div className="Pokemons">
+      <div className="pokemon">
         <h3>{pk.name}</h3>
-        <p>{pk.type}</p>
-        <p>{pk.averageWeight.value}{pk.averageWeight.measurementUnit}</p>
-        <img src={pk.image} alt={pk.name} />
+        <p>Tipo: {pk.type}</p>
+        <p>Peso: {pk.averageWeight.value}{pk.averageWeight.measurementUnit}</p>
+        <img className="imagem" src={pk.image} alt={pk.name} />
       </div>
     )
   }
