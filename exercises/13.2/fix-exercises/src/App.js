@@ -11,7 +11,7 @@ function App() {
     <BrowserRouter>
       <Route path="/about" component={ About } />
       <Route path="/howto" component={ Howto } />
-      <Route path="/profile" component={ Profile } />
+      <Route path="/profile/:ship" render={(props) => <Profile {...props} name="So testando o Profile!" /> } />
       <Route exact path="/" component={ Home } />
     </BrowserRouter>
   );

@@ -2,8 +2,9 @@ import React, { Component } from 'react'
 
 export class Profile extends Component {
     render() {
+        const { ship } = this.props.match.params
         return (
-                <p>So testando o paragrafo!</p>
+                <p>{this.props.name} {ship}</p>
         )
     }
 }
