@@ -1,19 +1,19 @@
 const Redux = require('redux');
 
-// const ESTADO_INICIAL = {
-//     login: false,
-//     email: "",
-//   };
+const ESTADO_INICIAL = {
+    login: false,
+    email: "",
+  };
   
-//   const reducer = (state = ESTADO_INICIAL) => {
-//     return state;
-//   };
+  const reducer = (state = ESTADO_INICIAL) => {
+    return state;
+  };
   
-//   const store = Redux.createStore(reducer);
+  const store = Redux.createStore(reducer);
   
-//   console.log(store.getState());
+  console.log(store.getState());
   
-  //{ login: false, email: '' }
+ // { login: false, email: '' }
 
 // --------------------------------------------------------------
 
@@ -51,13 +51,13 @@ const Redux = require('redux');
 
 // Arquivo index.js
 
-import { combineReducers } from 'redux';
-import meuReducer from './meuReducer';
-import meuOutroReducer from './meuOutroReducer';
+// import { combineReducers } from 'redux';
+// import meuReducer from './meuReducer';
+// import meuOutroReducer from './meuOutroReducer';
 
 
-const reducerCombinado = combineReducers({
-meuReducer,
-meuOutroReducer});
+// const reducerCombinado = combineReducers({
+// meuReducer,
+// meuOutroReducer});
 
-export default reducerCombinado;
+// export default reducerCombinado;
